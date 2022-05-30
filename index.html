@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    
+</head>
+<body>
+    <div class="titulo">
+        Calculadora
+    </div>
+
+
+    <table class="contenedor">
+        <tr>
+           <td colspan="4"> <span id="resultado"></span> </td>
+            
+        </tr>
+        
+
+        <tr>
+            <td><button onclick="Boton7()">7</button></td>
+            <td> <button onclick="Boton8()">8</button></td>
+            <td><button onclick="Boton9()">9</button></td>
+            <td><button onclick="vaciar()">C</button></td>
+        </tr>
+            
+        
+        <tr>
+            <td><button onclick="Boton4()">4</button></td>
+            <td><button onclick="Boton5()">5</button></td>
+            <td><button onclick="Boton6()">6</button></td>
+            <td><button onclick="multiplicar()">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="Boton3()">3</button></td>
+            <td><button onclick="Boton2()">2</button></td> 
+            <td><button onclick="Boton1()">1</button> </td>
+            <td><button onclick="dividir()">/</button></td>
+        </tr>
+            
+        <tr>          
+            <td><button onclick="Boton0()">0</button></td>
+            <td><button onclick="sumar()">+</button></td>
+            <td><button onclick="restar()">-</button></td>
+            <td><button onclick="igual()">=</button></td>
+        </tr> 
+
+
+    </table>
+
+    <div class="op">
+        <h2>Historial</h2>
+        <button id="borrar" onclick="Borrar()">Borrar Historial</button>
+        <p id="hist"></p>
+    </div>
+
+
+    <script src='JS/index.js'></script>
+</body>
+</html>
