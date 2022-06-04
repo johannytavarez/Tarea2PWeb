@@ -31,7 +31,6 @@ function igual(){
             calculo = num1 + " / " + num2 + " = " + respuesta
             break;
 
-    
         default:
             break;
     }
@@ -44,7 +43,6 @@ function igual(){
 
 function limpiar(){
     resultado.textContent = " ";
-    
 }
 
 function vaciar() {
@@ -58,7 +56,6 @@ function sumar(){
     num1 = resultado.textContent;
     operacion = "+";
     limpiar();
-    
 }
 
 function Boton1(){
@@ -129,7 +126,6 @@ function save_localStorage( resultado) {
 function id() {
     let id = localStorage.length + 1;
     return id;
-    
 }
 
 function Borrar() {
@@ -148,6 +144,4 @@ function allStorage() {
 
     return values;
 }
-
-//arreglar visualizacion del historial
 
